@@ -34,7 +34,7 @@ const items = [
 		url: "http://elzup.hatenablog.com/archive"
 	},
 	{
-		label: "Qiet",
+		label: "Quit",
 		action() {
 			process.exit(); // eslint-disable-line unicorn/no-process-exit
 		}
