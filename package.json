@@ -1,6 +1,6 @@
 {
 	"name": "elzup",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "The Elzup CLI",
 	"license": "MIT",
 	"repository": "elzup/elzup",
@@ -18,8 +18,14 @@
 	"scripts": {
 		"test": "xo && ava"
 	},
-	"files": ["source"],
-	"keywords": ["cli-app", "cli", "elzup"],
+	"files": [
+		"source"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"elzup"
+	],
 	"dependencies": {
 		"import-jsx": "^1.3.0",
 		"ink": "^0.4.1",
@@ -37,7 +43,9 @@
 		"xo": "*"
 	},
 	"xo": {
-		"extends": ["xo-react"],
+		"extends": [
+			"xo-react"
+		],
 		"settings": {
 			"react": {
 				"pragma": "h"
