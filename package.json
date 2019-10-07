@@ -39,7 +39,7 @@
 		"eslint-config-xo-react": "0.20.0",
 		"eslint-plugin-react": "7.16.0",
 		"execa": "0.11.0",
-		"jest": "22.4.4"
+		"jest": "24.9.0"
 	},
 	"jest": {
 		"testURL": "http://localhost/"
