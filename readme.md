@@ -1,4 +1,4 @@
-# elzup [![Build Status](https://travis-ci.org/elzup/elzup.svg?branch=master)](https://travis-ci.org/elzup/elzup)
+# elzup [![npm version](https://badge.fury.io/js/elzup.svg)](https://badge.fury.io/js/elzup) [![Build Status](https://travis-ci.org/elzup/elzup.svg?branch=master)](https://travis-ci.org/elzup/elzup)
 
 > The [elzup](https://elzup.com) CLI
 
