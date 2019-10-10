@@ -1,52 +1,51 @@
-"use strict";
-const React = require("react");
+'use strict'
 
-const path = require("path");
-const { Box, Text } = require("ink");
-const SelectInput = require("ink-select-input").default;
-const open = require("open");
+const React = require('react')
+const { Box, Text } = require('ink')
+const SelectInput = require('ink-select-input').default
+const open = require('open')
 
 const handleSelect = item => {
 	if (item.url) {
-		open(item.url);
+		open(item.url)
 	}
 
 	if (item.action) {
-		item.action();
+		item.action()
 	}
-};
+}
 
 const items = [
 	{
-		label: "Website",
-		url: "https://elzup.com"
+		label: 'Website',
+		url: 'https://elzup.com',
 	},
 	{
-		label: "Twitter",
-		url: "https://twitter.com/_elzup_"
+		label: 'Twitter',
+		url: 'https://twitter.com/_elzup_',
 	},
 	{
-		label: "GitHub",
-		url: "https://github.com/elzup"
+		label: 'GitHub',
+		url: 'https://github.com/elzup',
 	},
 	{
-		label: "Blog",
-		url: "http://elzup.hatenablog.com/archive"
+		label: 'Blog',
+		url: 'http://elzup.hatenablog.com/archive',
 	},
 	{
-		label: "Quit",
+		label: 'Quit',
 		action() {
-			process.exit(); // eslint-disable-line unicorn/no-process-exit
-		}
-	}
-];
+			process.exit()
+		},
+	},
+]
 
 const addKeys = items => {
 	for (const item of items) {
-		item.key = item.url || item.label;
+		item.key = item.url || item.label
 	}
-	return items;
-};
+	return items
+}
 
 module.exports = () => (
 	<Box flexDirection="column">
@@ -55,4 +54,4 @@ module.exports = () => (
 		</Box>
 		<SelectInput items={addKeys(items)} onSelect={handleSelect} />
 	</Box>
-);
+)

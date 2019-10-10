@@ -1,0 +1,6 @@
+{
+	"extends": ["nzap", "nzap/react", "nzap/jest"],
+	"rules": {
+		"react/display-name": 0
+	}
+}
