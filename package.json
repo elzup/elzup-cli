@@ -16,6 +16,8 @@
 		"node": ">=8"
 	},
 	"scripts": {
+		"cli": "source/cli.js",
+		"lint": "eslint source",
 		"test": "jest"
 	},
 	"files": [
@@ -27,19 +29,21 @@
 		"elzup"
 	],
 	"dependencies": {
-		"import-jsx": "3.0.0",
-		"ink": "0.5.1",
-		"ink-select-input": "1.1.0",
-		"meow": "5.0.0",
-		"opn": "5.5.0",
-		"term-img": "4.1.0",
-		"terminal-image": "0.2.0"
+		"import-jsx": "^3.0.0",
+		"ink": "^2.1.1",
+		"ink-select-input": "^3.1.1",
+		"meow": "^5.0.0",
+		"open": "^6.3.0",
+		"react": "^16.8.6",
+		"term-img": "^4.1.0",
+		"terminal-image": "^0.2.0"
 	},
 	"devDependencies": {
 		"eslint-config-xo-react": "0.20.0",
 		"eslint-plugin-react": "7.16.0",
-		"execa": "0.11.0",
-		"jest": "22.4.4"
+		"execa": "2.1.0",
+		"ink-testing-library": "^1.0.2",
+		"jest": "24.9.0"
 	},
 	"jest": {
 		"testURL": "http://localhost/"

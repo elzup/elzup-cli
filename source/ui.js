@@ -1,10 +1,10 @@
 "use strict";
-const path = require("path");
-const { h, Text } = require("ink");
-const SelectInput = require("ink-select-input");
-const opn = require("opn");
+const React = require("react");
 
-const open = url => opn(url, { wait: false });
+const path = require("path");
+const { Box, Text } = require("ink");
+const SelectInput = require("ink-select-input").default;
+const open = require("open");
 
 const handleSelect = item => {
 	if (item.url) {
@@ -41,13 +41,18 @@ const items = [
 	}
 ];
 
+const addKeys = items => {
+	for (const item of items) {
+		item.key = item.url || item.label;
+	}
+	return items;
+};
+
 module.exports = () => (
-	<div>
-		<br />
-		<div>
+	<Box flexDirection="column">
+		<Box marginBottom={1}>
 			<Text>I’m a Web service developer.</Text>
-		</div>
-		<br />
-		<SelectInput items={items} onSelect={handleSelect} />
-	</div>
+		</Box>
+		<SelectInput items={addKeys(items)} onSelect={handleSelect} />
+	</Box>
 );
